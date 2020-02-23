@@ -1,0 +1,90 @@
+<!--File: metrics.html 
+    Team Adhere-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics</title>
+    <link href="../css/common.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</head>
+
+<body id="metrics-body">
+    <div id="container">
+        <div id="nav-div">
+            <nav id="top-bar">
+                <ul>
+                    <li id="li1">Home</li>
+                    <li id="li2">User ID #:</li> <!-- jQuery-->
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div id="graph-div">
+                <h1>ADHERENCE GRAPH</h1>
+            </div>
+            <canvas id="myChart"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                        datasets: [{
+                            label: 'Prozac',
+                            data: [12, 19, 3, 17, 6, 3, 7],
+                            backgroundColor: "rgba(153,255,51,0.4)"
+                        }, {
+                            label: 'Simvastatin',
+                            data: [2, 29, 5, 5, 2, 3, 10],
+                            backgroundColor: "rgba(255,153,0,0.4)"
+                        }]
+                    }
+                });
+            </script>
+
+            <div id="advice-div">
+                <p>Hello, </p> <!-- ____. You took _/_ of the prescribed medications in the pas week.-->
+                <div class=result>
+                    <p id="adherence"></p>
+                    <!-- Great job! Looks like you've been on top of things in regards your medications.-->
+                    <p id="non-adherence"></p>
+                    <!-- Aw :(. It looks like you have missed at least a few scheduled prescription intakes.-->
+                </div>
+                <div class="encouragement">
+                    <p>According to the American Heart Association, not taking medication as directed is a common
+                        problem which leads to more complications for patients in the future.</p>
+                    <b>It is highly encouraged that you can adhere to the prescription plan set up by your doctor. This
+                        allow you to set long-term health goals and thus maximize healthiness.</b>
+                    <p>You may always reach out to your doctor, pharmacist or other trusted healthcare professionals to
+                        give sound advice on managing your medication. Having conversations about how a certain medicine
+                        can impact your condition is key.</p>
+                </div>
+            </div>
+        </main>
+        <div id="nav-div">
+            <nav id="nav-bar-bottom">
+                <ul>
+                    <a id="n1" href="metrics.html">
+                        <li id="ni1">Metrics</li>
+                    </a>
+                    <a id="n2" href="home.html">
+                        <li id="ni2">Home</li>
+                    </a>
+                    <a id="n3" href="prescription.html">
+                        <li id="ni3">Prescriptions</li>
+                    </a>
+                    <a id="n4" href="scan.html">
+                        <li id="ni4">Scan QR</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <footer id="footer"></footer>
+        <script src="../js/metrics.js"></script>
+    </div>
+</body>
+
+</html>

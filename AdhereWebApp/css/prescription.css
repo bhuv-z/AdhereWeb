@@ -1,0 +1,88 @@
+
+
+.bck-orange {
+    background: #ff9800;
+}
+
+.bck-red {
+    background: #f4511e;
+}
+
+.bck-green {
+    background: #afb42b;
+}
+
+.bck-yellow {
+    background: #ffc400;
+}
+
+.bck-blue {
+    background: #64b5f6;
+}
+
+.bck-pink {
+    background: #f48fb1;
+}
+
+.md-layout .mbsc-scv-item {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.md-layout .mbsc-scv-c {
+    margin: 10px 0;
+}
+
+.variable-1 {
+    width: 60px;
+    height: 60px;
+}
+
+.variable-2 {
+    width: 80px;
+    height: 80px;
+}
+
+.variable-3 {
+    width: 70px;
+    height: 70px;
+}
+
+.variable-4 {
+    width: 50px;
+    height: 50px;
+}
+
+.variable-5 {
+    width: 100px;
+    height: 100px;
+}
+
+.variable-6 {
+    width: 40px;
+    height: 40px;
+}
+
+.md-fixed .mbsc-scv-item {
+    height: 80px;
+    margin: 0 10px;
+}
+
+.md-variable .mbsc-scv-item {
+    margin: auto 10px;
+}
+
+.md-pages .mbsc-scv-item {
+    height: 80px;
+}
+
+.md-fullpage .mbsc-scv-item {
+    height: 630px;
+    font-size: 28px;
+}
+
+#cardscroll-{
+
+}
+
